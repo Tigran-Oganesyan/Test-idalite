@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Добавление товара</h1>
+        <form>
+            <select class="default">
+                <option>По умолчанию</option>
+                <option>По возрастанию</option>
+                <option>По убыванию</option>
+            </select>
+        </form>
+    </div>
+    <div class="main">
+        <div class="form">
+            <form class="form-inputs">
+                <p class="input-title">Наименование товара<span class="form-important">*</span></p>
+                <input type="text" class="form-title" value='' placeholder="Введите наименование товара">
+                <p class="input-title">Описание товара</p>
+                <textarea type="text" class="form-info" value='' placeholder="Введите описание товара"></textarea>
+                <p class="input-title">Ссылка на изображение товара<span class="form-important">*</span></p>
+                <input type="text" class="form-img" value='' placeholder="Введите ссылку">
+                <p class="input-title">Цена товара<span class="form-important">*</span></p>
+                <input type="number" class="form-price" value='' placeholder="Введите цену">
+            </form>
+            <button class="add">Добавить товар</button>
+        </div>
+        <div class="cards-list">
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
